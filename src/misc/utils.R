@@ -19,7 +19,7 @@
 #' 
 #' @return [void]
 #'
-fraud.utils.required_options(req, opts_list) {
+fraud.utils.required_options <- function(req, opts_list) {
   matches <- req %in% names(opts_list)
   if(!all(matches)) {
     stop(paste0("Missing options in 'fraud.options': ",paste0(req[!matches],collapse=', ')))
@@ -33,7 +33,8 @@ fraud.utils.required_options(req, opts_list) {
 #' @return [list] - an updated list
 #'
 fraud.utils.validate_options <- function(opts_list) {
-  
+  # TODO: implement options validation
+  return(opts_list) 
 }
 
 #' Logs a message 
@@ -46,6 +47,6 @@ fraud.utils.validate_options <- function(opts_list) {
 fraud.utils.log <- function(sender, message) {
   now <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
   
-  cat(paste0("[",now,"] ",sender,": ",message))
+  cat(paste0("[",now,"] ",sender,": ",message,"\n"))
   
 }

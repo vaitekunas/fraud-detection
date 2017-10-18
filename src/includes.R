@@ -12,13 +12,13 @@
 #
 ###############################################################################
 
-fraud_paths <- c("src/libraries.R",
+fraud.paths <- c("src/libraries.R",
                  "src/misc/utils.R",
                  "src/data/data.R",
                  "src/models/training_utilities.R",
                  "src/models/training.R"
                  )
 
-for(path in paths) {
+for(path in fraud.paths) {
   source(path)
 }

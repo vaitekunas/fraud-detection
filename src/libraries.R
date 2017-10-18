@@ -13,7 +13,7 @@
 ###############################################################################
 
 # Package requirements for this project
-packages <- c("dplyr","magrittr","ggplot")
+packages <- c("dplyr","magrittr","ggplot2")
 
 # Install missing libraries
 missing <- packages[!(packages %in% utils::installed.packages()[,1])]

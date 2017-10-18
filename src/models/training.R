@@ -8,10 +8,6 @@
 #
 # -----------------------------------------------------------------------------
 #
-# Training functions 
+# Training functions
 #
 ###############################################################################
-
-# fraud.cv %>%
-#   fraud.sampling(sampling = opt_sampling_method, minority_quote = opt_sampling_minority_quote) %>%
-#   fraud.train() %T>%
